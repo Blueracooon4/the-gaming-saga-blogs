@@ -1,0 +1,660 @@
+/* The styling is done by me 
+( i only used gpt for Removed Duplicates,adding perfect comment for understand, Grouped Related Styles,
+  Organized game cards, and Consistent Formatting *ONLY*)   */
+body {
+
+    font-family:audiowide, "Crimson Text", serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 18px;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #360a0a;
+    /* Fallback color */
+    background-image: url('Images/WhatsApp\ Image\ 2024-10-26\ at\ 23.50.15_e6cc6672.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+
+/* Headings */
+
+
+
+
+h1 {
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    color: black;
+    font-size: 30px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@keyframes zoomInPulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2 {
+    font-size: 28px;
+    animation: glow 1.5s infinite alternate;
+    color: #fffefe;
+    ;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow:
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000,
+        5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    animation: zoomInPulse 2s ease-out forwards;
+
+     font-family: 'Audiowide', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+p {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+
+
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-image: url(Images/realistic-black-background-with-wavy-lines_23-2149164545.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+#Blogs p {
+    text-align: left;
+    font-style: italic;
+    font-size: 28px;
+    color: #d3d3d3;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+/* Header Styling */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #360a0a;
+    border-bottom: 2px solid #ff4c4c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1a1a1a;
+    background-image: url('Images/premium-dark-black-business-wallpaper-with-stripe-lines-design_1017-55827.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+/*here i added an animation for the header name of the site i added 3d slide animation (come from left end and stop at center it helps the site to look more good*/
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100vw) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(10px) rotateX(10deg) rotateY(15deg) scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+}
+
+
+
+header h1 {
+     font-family: 'Audiowide', sans-serif;
+    font-size: 48px;
+    color: #f9f6f6;
+    letter-spacing: 1.5px;
+    position: relative;
+    text-shadow:
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000,
+        5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    animation: slideInFromLeft 2s ease-out forwards;
+
+    
+    font-optical-sizing: auto;
+    font-weight: 303;
+    font-style: italic;
+
+
+}
+
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+@keyframes swingInFromRight {
+    0% {
+        transform: translateX(100vw) rotate(0deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0) rotate(10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateX(0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+nav a {
+    font-size: 28px;
+    color: #ff4c4c;
+    letter-spacing: 1.5px;
+    position: relative;
+    text-shadow:
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000,
+        5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    animation: swingInFromRight 2s ease-out forwards;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+
+
+nav a:hover {
+    background-color: #c8890b;
+    transform: scale(1.1);
+}
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Game List and Cards */
+
+
+
+ul.game-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    text-align: center;
+}
+
+.game-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.game-card:hover .game-inner {
+    transform: rotateY(180deg);
+}
+
+
+.game-front,
+.game-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Glass-like border */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    transition: box-shadow 0.6s ease;
+}
+
+.game-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-back {
+    background: rgba(44, 47, 51, 0.3);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Border for glass effect */
+    backdrop-filter: blur(10px);
+    /* Frosted effect for the back */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    /* Depth */
+}
+
+
+
+
+/* Button Styles */
+
+
+.three-d-button,
+input[type="submit"] {
+    background-color: #c31f1f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: 0 5px #720606;
+}
+
+.three-d-button:hover,
+input[type="submit"]:hover {
+    background-color: #5b1111;
+    box-shadow: 0 8px #0b0a0a;
+}
+
+.three-d-button:active,
+input[type="submit"]:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px #080808;
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form label {
+    
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff4c4c;
+    outline: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #121212;
+    color: #d3d3d3;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+/*took some help of gpt for styling the cards*/
+
+/* Main card styling */
+.game-card {
+    perspective: 1000px;
+    /* Creates the 3D space for flip effect */
+}
+
+.game-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s, box-shadow 0.6s;
+    /* Smooth transition for both transform and shadow */
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 20px orangered;
+    /* Initial yellow glowing shadow */
+    border-radius: 25px;
+    /* Optional: for rounded edges */
+    position: relative;
+}
+
+/* Front and back sides of the card */
+.game-front,
+.game-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hides the back when the front is visible */
+    border-radius: 10px;
+}
+
+/* Styling for the front of the card */
+.game-front {
+    background: #fff;
+    /* Customize the background color */
+}
+
+/* Styling for the back of the card */
+.game-back {
+
+    background-image: url('Images/WhatsApp\ Image\ 2024-10-26\ at\ 21.49.43_e59ad6dc.jpg');
+    background-size: cover;
+    /* Scale to cover the entire area */
+    background-repeat: no-repeat;
+    /* Prevent tiling */
+    background-position: center center;
+    /* Center the image */
+
+
+
+    transform: rotateY(180deg);
+}
+
+/* Flip the card */
+.game-card:hover .game-inner {
+    transform: rotateY(180deg);
+    box-shadow: none;
+    /* Shadow disappears during the flip */
+}
+
+
+
+
+/* Style for the details dropdown */
+
+details {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #360a0a;
+    /* Fallback color */
+
+
+    background-color: #1a1a1a;
+    /* Fallback color */
+    background-image: url('Images/black-carbon-fiber-texture-pattern-with-light-shades_1017-21351.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: larger;
+}
+
+
+/* Hover and active state for the details element */
+details:hover,
+details[open] {
+    border-color: rgba(213, 37, 13, 0.8);
+    box-shadow: 0px 0px 10px rgba(213, 37, 13, 0.8);
+    border-radius: 1px;
+}
+
+/* Style for the links inside the details */
+details a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    color: #111111c1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover and active state for the links */
+details a:hover {
+    background-color: #222;
+    text-decoration: underline;
+}
+
+/*this is i useed to style the summary of the paragraph*/
+details summary {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.details-container h1 {
+    color: wheat;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Add a transition for smooth opening/closing */
+details[open] a {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* i added this method for a smooth scroll at the web page*/
+html {
+    scroll-behavior: smooth;
+}
+
+.game-card a {
+    cursor: pointer;
+}
+
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.details-container {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.8;
+    color: #f5f5f5;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #222;
+    max-width: 800px;
+
+    background-color: #1a1a1a;
+    background-image: url('Images/dark-polygonal-background_23-2148121432.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 767px) {
+    .details-container {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+}
+
+/* Styling for Desktop */
+@media (min-width: 768px) {
+    .details-container {
+        font-size: 18px;
+    }
+}
+
+details a {
+    color: white;
+}
